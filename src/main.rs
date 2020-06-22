@@ -16,7 +16,7 @@ pub struct Object<'d> {
 #[rtic::app(device = stm32h7xx_hal::stm32)]
 const APP: () = {
     struct Resources {
-        // Note: It appears that rustfmt generates a format that GDB cannot recognize, which
+        // Note: It appears that rustfmt may generate a format that GDB cannot recognize, which
         // results in GDB breakpoints being set improperly. To debug, redefine the following
         // definition to:
         //

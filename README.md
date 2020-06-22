@@ -1,3 +1,13 @@
+# GDB Bug Demonstration
+This repository demonstrates a bug within GDB when parsing rust source code processed by RTIC.
+
+When attempting to set breakpoints within the main.rs file, all breakpoints will be set to the
+HardFault handler. Attempting to single step (using next) in GDB will never step to the next line as
+expected.
+
+A comment in the source code demonstrates what is causing the apparent parsing failure.
+
+# Bug Explanation
 # Compilation
 
 This example was developed for the STM32H743V processor using the ST-Link v3 debugger. It is unknown
