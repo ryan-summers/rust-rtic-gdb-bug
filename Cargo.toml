@@ -1,0 +1,15 @@
+[package]
+name = "gdb-test"
+version = "0.1.0"
+authors = ["Ryan Summers <ryan.summers@vertigo-designs.com>"]
+description = "Demonstration of GDB bug"
+categories = ["embedded", "no-std", "hardware-support", "science"]
+license = "GPL-3.0-or-later"
+edition = "2018"
+
+[dependencies]
+cortex-m = { version = "0.6", features = ["const-fn"] }
+cortex-m-rt = { version = "0.6", features = ["device"] }
+panic-halt = "0.2"
+cortex-m-rtic = "0.5.3"
+stm32h7xx-hal = { version = "0.5.0", features = ["stm32h743v", "rt"] }
