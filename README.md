@@ -7,8 +7,7 @@ expected.
 
 A comment in the source code demonstrates what is causing the apparent parsing failure.
 
-# Bug Explanation
-# Compilation
+## Compilation
 
 This example was developed for the STM32H743V processor using the ST-Link v3 debugger. It is unknown
 whether or not this bug will reproduce on other platforms.
@@ -23,7 +22,7 @@ Then compile using cargo:
 cargo build
 ```
 
-# Running Example
+## Running Example
 
 After starting openOCD (Note: OpenOCD version must be very recent for ST-LINKv3) using the
 following:
